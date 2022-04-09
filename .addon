@@ -1,0 +1,19 @@
+{
+  "Title": "Surf",
+  "Type": "game",
+  "Org": "local",
+  "Ident": "surf",
+  "Schema": 1,
+  "HasAssets": true,
+  "AssetsPath": "",
+  "ResourcePaths": null,
+  "HasCode": true,
+  "CodePath": "/code/",
+  "RootNamespace": "Surf",
+  "Metadata": {
+    "MapList": [
+      "s2s_map"
+    ],
+    "MinPlayers": 1
+  }
+}
