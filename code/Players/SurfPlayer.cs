@@ -6,20 +6,20 @@ namespace Surf.Players;
 internal partial class SurfPlayer : Sandbox.Player
 {
 
-	public override void Spawn()
+	public override void Respawn()
 	{
-		base.Spawn();
+		base.Respawn();
 
 		SetModel( "models/citizen/citizen.vmdl" );
 
-		Controller = new WalkController()
+		Controller = new SurfController()
 		{
 			AirAcceleration = 150,
 			WalkSpeed = 260,
 			SprintSpeed = 260,
 			DefaultSpeed = 260,
 			AutoJump = true,
-			Acceleration = 4,
+			Acceleration = 5,
 		};
 		CameraMode = new Camera();
 		Animator = new StandardPlayerAnimator();
