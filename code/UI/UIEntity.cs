@@ -12,6 +12,7 @@ internal class UIEntity : HudEntity<RootPanel>
 		if ( IsServer ) return;
 
 		RootPanel.AddChild<Hud>();
+		RootPanel.AddChild<ChatBox>();
 	}
 
 }

@@ -22,8 +22,8 @@ internal partial class SurfGame : Game
 	{
 		base.ClientJoined( client );
 
-		client.Pawn = new Pawn();
-		(client.Pawn as Pawn).Respawn();
+		client.Pawn = new SurfPlayer();
+		(client.Pawn as SurfPlayer).Respawn();
 	}
 
 }

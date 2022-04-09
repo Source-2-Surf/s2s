@@ -3,7 +3,7 @@ using Sandbox;
 
 namespace Surf.Players;
 
-internal partial class Pawn : Player
+internal partial class SurfPlayer : Sandbox.Player
 {
 
 	public override void Spawn()

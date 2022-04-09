@@ -7,6 +7,15 @@ namespace Surf.Map;
 public partial class BaseZone : BaseTrigger 
 { 
 
+	public override void Spawn()
+	{
+		base.Spawn();
+
+		Transmit = TransmitType.Always;
+		EnableTouch = true;
+		EnableTouchPersists = true;
+	}
+
 }
 
 [EntityTool("test", "test2")]
