@@ -1,6 +1,7 @@
 ﻿
 using Hammer;
 using Sandbox;
+using System.Linq;
 
 namespace Surf.Map;
 
@@ -14,6 +15,20 @@ public partial class BaseZone : BaseTrigger
 		Transmit = TransmitType.Always;
 		EnableTouch = true;
 		EnableTouchPersists = true;
+	}
+
+	public override void ClientSpawn()
+	{
+		base.ClientSpawn();
+
+		var particle = Particles.Create( "particles/gameplay/checkpoint/checkpoint.vpcf" );
+
+		for ( int i = 0; i < 4; i++ )
+		{
+			var corner = Position + Model.PhysicsBounds.Corners.ElementAt( i );
+			corner.z += 1;
+			particle.SetPosition( i + 1, corner );
+		}
 	}
 
 }
