@@ -12,8 +12,9 @@
   "RootNamespace": "Surf",
   "Metadata": {
     "MapList": [
-      "local.surf_map"
+      "surf_map"
     ],
-    "MinPlayers": 1
+    "MinPlayers": 1,
+    "MapSelect": 1
   }
 }
