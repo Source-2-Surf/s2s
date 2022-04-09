@@ -14,14 +14,16 @@
 ]
 
 //
-// Surf.Map.StartZone
+// Surf.Map.LinearStart
 //
 @SolidClass base(BaseProperties_local_surf) tags( Trigger ) 
 metadata
 {
+	entity_tool_name = "test"
+	entity_tool_group = "test2"
 	auto_apply_material = "materials/tools/toolstrigger.vmat"
 }
-= surf_timer_start : "Where the timer will start"
+= surf_linear_start : "Where the timer will start"
 [
 	startdisabled(boolean) : "Start Disabled" : 0 : "Should this entity start disabled?"
 	actvationtags(tags) : "Actvation Tags" :  : "Entities with these tags can activate this trigger."
@@ -50,14 +52,14 @@ metadata
 ]
 
 //
-// Surf.Map.EndZone
+// Surf.Map.LinearEnd
 //
 @SolidClass base(BaseProperties_local_surf) tags( Trigger ) 
 metadata
 {
 	auto_apply_material = "materials/tools/toolstrigger.vmat"
 }
-= surf_timer_end : "Where the timer will end"
+= surf_linear_end : "Where the timer will end"
 [
 	startdisabled(boolean) : "Start Disabled" : 0 : "Should this entity start disabled?"
 	actvationtags(tags) : "Actvation Tags" :  : "Entities with these tags can activate this trigger."
@@ -86,14 +88,14 @@ metadata
 ]
 
 //
-// Surf.Map.StageStartZone
+// Surf.Map.LinearCheckpoint
 //
 @SolidClass base(BaseProperties_local_surf) tags( Trigger ) 
 metadata
 {
 	auto_apply_material = "materials/tools/toolstrigger.vmat"
 }
-= surf_timer_stage_start : "Where the timer will begin a stage"
+= surf_linear_checkpoint : "Where the timer will set a checkpoint (linear)"
 [
 	startdisabled(boolean) : "Start Disabled" : 0 : "Should this entity start disabled?"
 	actvationtags(tags) : "Actvation Tags" :  : "Entities with these tags can activate this trigger."
@@ -122,14 +124,14 @@ metadata
 ]
 
 //
-// Surf.Map.StageEndZone
+// Surf.Map.StageStart
 //
 @SolidClass base(BaseProperties_local_surf) tags( Trigger ) 
 metadata
 {
 	auto_apply_material = "materials/tools/toolstrigger.vmat"
 }
-= surf_timer_stage_end : "Where the timer will end a stage"
+= surf_stage_start : "Where the timer will begin a stage"
 [
 	startdisabled(boolean) : "Start Disabled" : 0 : "Should this entity start disabled?"
 	actvationtags(tags) : "Actvation Tags" :  : "Entities with these tags can activate this trigger."
@@ -158,14 +160,14 @@ metadata
 ]
 
 //
-// Surf.Map.CheckpointZone
+// Surf.Map.StageEnd
 //
 @SolidClass base(BaseProperties_local_surf) tags( Trigger ) 
 metadata
 {
 	auto_apply_material = "materials/tools/toolstrigger.vmat"
 }
-= surf_timer_checkpoint : "Where the timer will set a checkpoint (linear)"
+= surf_stage_end : "Where the timer will end a stage"
 [
 	startdisabled(boolean) : "Start Disabled" : 0 : "Should this entity start disabled?"
 	actvationtags(tags) : "Actvation Tags" :  : "Entities with these tags can activate this trigger."
