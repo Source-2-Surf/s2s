@@ -5,7 +5,7 @@
   "Ident": "surf",
   "Schema": 1,
   "HasAssets": true,
-  "AssetsPath": "",
+  "AssetsPath": "/assets/",
   "ResourcePaths": null,
   "HasCode": true,
   "CodePath": "/code/",
